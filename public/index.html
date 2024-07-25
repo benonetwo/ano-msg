@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous News Reporting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit News Anonymously</h1>
+        <form id="reportForm" enctype="multipart/form-data">
+            <label for="title">News Title:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">News Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="media">Upload Media (Optional):</label>
+            <input type="file" id="media" name="media" accept="image/*,video/*">
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+        <p id="downloadLink"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
